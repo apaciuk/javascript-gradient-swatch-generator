@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Linear Gradient Swatch Generator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-light navbar-full bg-light">
+    <a class="navbar-brand" href="#">Gradient Generator</a>
+</nav>
+<div id="bodybg">
+  <div class="container text-center">
+    <h1>Gradient Generator</h1>
+    <h2>Pick the Color Range and Click to Copy</h2>
+    <br />
+    <br />
+    <input type="color" name="" id="colorone" value="#657A99">
+    <input type="color" name="" id="colortwo" value="#95C42B">
+    <br /><br />
+    <div id="showvalue"></div>
+    <button type="button" id="copyBtn" onclick="copyToSwatch()" class="btn btn-success" style="display:none;">Save To Swatch</button>
+   </div>
+  </div>
+</div>
+<div class="jumbotron">
+<div class="container-fluid bg-3 text-center">
+  <h3>Gradients</h3><br>
+  <div class="row">
+    <div class="col-md-3 bg-gradient">
+      <p>Some text..</p>
+      <button type="button" class="btn btn-danger">Delete Swatch</button>
+    </div>
+    <div class="col-md-3 bg-gradient">
+      <p>Some text..</p>
+    </div>
+    <div class="col-md-3 bg-gradient">
+      <p>Some text..</p>
+    </div>
+    <div class="col-md-3 bg-gradient">
+      <p>Some text..</p>
+    </div>
+      <div class="col-md-3 bg-gradient">
+      <p>Some text..</p>
+    </div>
+     <div class="col-md-3 bg-gradient">
+      <p>Some text..</p>
+    </div>
+    <div class="col-md-3 bg-gradient">
+      <p>Some text..</p>
+    </div>
+    <div class="col-md-3 bg-gradient">
+      <p>Some text..</p>
+    </div>
+     <div class="col-md-3 bg-gradient">
+      <p>Some text..</p>
+    </div>
+
+  </div>
+</div>
+<br>
+
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

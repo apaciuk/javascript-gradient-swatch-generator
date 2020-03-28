@@ -1,0 +1,29 @@
+  /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: gainsboro;
+      padding:15px;
+    }
+    .navbar-brand {
+      text-transform: uppercase;
+    }
+    .bg-gradient {
+    height: 240px;;
+    width:100%;
+    }
+#bodybg {
+padding-top: 30px;
+height: 350px;
+background: linear-gradient(#454567 0%, #04619f 74%);
+}
+input#colorone,
+input#colortwo {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  margin: 8px;
+  cursor: pointer;
+
+}
+
+
+
