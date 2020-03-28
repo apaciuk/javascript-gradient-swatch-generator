@@ -4,6 +4,7 @@ const colortwo = document.getElementById('colortwo');
 const gradient = document.getElementById('bodybg');
 const showdata = document.getElementById('showvalue');
 const showCBtn = document.getElementById('copyBtn');
+
 colorone.addEventListener('input', setbgColor);
 colortwo.addEventListener('input', setbgColor);
 
@@ -16,10 +17,14 @@ function createSwatch () {
     window.getSelection().removeAllRanges(); // clear current selection
     window.getSelection().addRange(range); // to select text
     document.execCommand("copy");
+    window.getSelection().removeAllRanges();// to deselect
+    swal(`${gradient}`);
     let newDiv = document.createElement('div');
     newDiv.classList.add("col-md-3", "bg-gradient");
     let newSwatch = document.querySelector('.row');
     newSwatch.appendChild(newDiv);
+    console.log(gradient);
+    //newDiv.style.backgroundColor = "${gradient}";
 }
 
 // Pick and Set the BG Gradient
@@ -38,6 +43,6 @@ function copyToSwatch () {
     window.getSelection().removeAllRanges(); // clear current selection
     window.getSelection().addRange(range); // to select text
     document.execCommand("copy");
-    //window.getSelection().removeAllRanges();// to deselect
+
     swal(`${gradient}`);
     }
