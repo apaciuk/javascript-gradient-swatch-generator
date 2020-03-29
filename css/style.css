@@ -8,7 +8,7 @@
       padding: 10px;
     }
     #bg-gradient {
-    height: 240px;;
+    height: 220px;;
     width:100%;
     }
 #bodybg {
@@ -18,9 +18,9 @@ background: linear-gradient(#657a99,#9eb962);
 }
 input#colorone,
 input#colortwo {
-  width: 3rem;
+  width: 4rem;
   height: 3rem;
-  border: none;
+  border-color: blue;
   margin: 8px;
   cursor: pointer;
 }
