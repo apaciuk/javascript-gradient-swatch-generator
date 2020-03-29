@@ -4,6 +4,10 @@ const colortwo = document.getElementById('colortwo');
 const gradient = document.getElementById('bodybg');
 const showdata = document.getElementById('showvalue');
 const showCBtn = document.getElementById('copyBtn');
+const delBtn = document.createElement("button");
+delBtn.classList.add('btn', 'btn-danger');
+delBtn.innerHtml = 'Delete';
+delBtn.addEventListener('click', deleteSwatch());
 
 colorone.addEventListener('input', setbgColor);
 colortwo.addEventListener('input', setbgColor);
@@ -14,8 +18,7 @@ function setbgColor () {
     showdata.style.display = "none";
     showCBtn.style.display = "block";
 }
-
-// Copy gradient, Cceate new elements for swatch and add to swatch
+// Copy gradient, Create new elements for swatch and add to swatch
 function createSwatch () {
     showdata.textContent = `linear-gradient(to right, ${colorone.value}, ${colortwo.value})`;
     let gradient = showdata.textContent;
@@ -34,6 +37,9 @@ function createSwatch () {
     let swatch = document.getElementById("bg-gradient");
     swatch.style.backgroundImage = gradient;
     console.log(gradient);
+}
+function deleteSwatch() {
+    console.log("Delete Works");
 }
 
 
