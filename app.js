@@ -48,12 +48,11 @@ function addTitle() {
     }).then((data) => {
         swal(`Cool, its called: ${data}`)
         // your input data object will be usable from here
-        //console.log(data);
-        return value;
+        console.log(data);
     });
 }
 //  Copy gradient, Create new elements for swatch and add to swatch
-function createSwatch () {
+    function createSwatch () {
     showdata.textContent = `linear-gradient(to right, ${colorone.value}, ${colortwo.value})`;
     // Set the actual css style value/statement for the gradient
     let gradient = showdata.textContent;
@@ -67,10 +66,9 @@ function createSwatch () {
     // Copy the css statement
     document.execCommand("copy");
     window.getSelection().removeAllRanges();// to deselect
+    addTitle()
 
-    //console.log(data);
-    //let swatchValue = swal.value;
-    //console.log(swatchValue);
+
     // Create the swatch elements, starting with the class and id
     newDiv.classList.add("col-md-3");
     newDiv.setAttribute("id", "bg-gradient");
