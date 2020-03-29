@@ -84,6 +84,7 @@ function addTitle() {
     let grad = document.getElementById("bg-gradient");
     grad.style.backgroundImage = gradient;
     textDiv.innerHTML = `<h5>Title</h5><p>${hexValues}</p>`;
+
     // Conditional statement to check if swatch exists before insertion
 
     // FIX THIS BIT

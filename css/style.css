@@ -1,8 +1,6 @@
   /* Add a gray background color and some padding to the footer */
 
-body {
-  color: #345345;
-}
+
   footer {
       background-color: gainsboro;
       padding:12px;
@@ -16,21 +14,23 @@ body {
     width:100%;
     }
     #info {
+      padding-top:8px;
     background-color:#fff;
-      height: 70px;
+      height: 55px;
       width:100%;
     }
     #info p {
       text-align:left!important;
-      padding-left:6px;
+      padding-left:10px;
       font-size: 0.8em;
-      font-weight: bold;
+      font-weight: 700;
     }
     #info h5 {
       text-align:left;
-      padding-left: 6px;
-      font-size: 1.0em;
-      font-weight: bold;
+      text-transform:uppercase;
+      padding-left: 10px;
+      font-size: 0.9em;
+      font-weight: 700;
     }
 #bodybg {
 padding-top: 30px;
