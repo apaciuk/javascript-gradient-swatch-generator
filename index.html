@@ -8,8 +8,9 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <nav class="navbar navbar-expand-md navbar-light navbar-full bg-light">
+ <nav class="navbar navbar-expand-md navbar-light navbar-full bg-light">
     <a class="navbar-brand" href="#">Gradient Generator</a>
+    <button type="button" id="copyBtn" onclick="createSwatch()" class="navbar ml-auto btn btn-sm btn-success" style="display:none;">Save To Swatch</button>
 </nav>
 <div id="bodybg">
   <div class="container text-center">
@@ -21,8 +22,7 @@
     <input type="color" name="" id="colortwo" value="#95C42B">
     <br /><br />
     <div id="showvalue"></div>
-    <button type="button" id="copyBtn" onclick="createSwatch()" class="btn btn-success" style="display:none;">Save To Swatch</button>
-   </div>
+  </div>
   </div>
 </div>
 <div class="jumbotron">

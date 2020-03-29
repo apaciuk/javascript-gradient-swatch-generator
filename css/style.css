@@ -5,6 +5,7 @@
     }
     .navbar-brand {
       text-transform: uppercase;
+      padding: 10px;
     }
     #bg-gradient {
     height: 240px;;
