@@ -1,5 +1,9 @@
   /* Add a gray background color and some padding to the footer */
-    footer {
+
+body {
+  color: #345345;
+}
+  footer {
       background-color: gainsboro;
       padding:12px;
     }
@@ -8,8 +12,20 @@
       padding: 10px;
     }
     #bg-gradient {
-    height: 220px;;
+    height: 180px;;
     width:100%;
+    }
+    #info {
+    background-color:#fff;
+      height: 70px;
+      width:100%;
+    }
+    #info p {
+      text-align:left!important;
+      padding-left:6px;
+      font-size: 0.8em;
+      font-weight: bold;
+      margin: none;
     }
 #bodybg {
 padding-top: 30px;
@@ -23,6 +39,9 @@ input#colortwo {
   border-color: blue;
   margin: 8px;
   cursor: pointer;
+}
+.swal-text {
+  text-transform: capitalize;
 }
 
 
