@@ -17,18 +17,6 @@ let textDiv = document.createElement('div');
  newSwatch.appendChild(textDiv);
  // Set the id to info div
  textDiv.setAttribute("id", "info");
-// Buttons to create, edit and delete swatch
-const createBtn = document.getElementById('createBtn');
-const editBtn = document.createElement("button");
-const delBtn = document.createElement("button");
-// Button to edit swatch
-editBtn.classList.add('btn', 'btn-warning', 'btn-sm');
-editBtn.innerHtml = 'Edit';
-editBtn.addEventListener('click', editSwatch());
-// Button to delete swatch
-delBtn.classList.add('btn', 'btn-danger', 'btn-sm');
-delBtn.innerHtml = 'Del';
-delBtn.addEventListener('click', deleteSwatch());
 //Listens & Sets the BG Gradient from inputs in setbgColor function
 colorone.addEventListener('input', setbgColor);
 colortwo.addEventListener('input', setbgColor);
@@ -36,7 +24,6 @@ colortwo.addEventListener('input', setbgColor);
 function setbgColor () {
     bodybg.style.background = `linear-gradient(to right, ${colorone.value}, ${colortwo.value})`;
     showdata.style.display = "none";
-    createBtn.style.display = "block";
 }
 // Add Title to the swatch
 function addTitle() {

@@ -27,7 +27,7 @@
     }
     #info h5 {
       text-align:left;
-      text-transform:uppercase;
+      text-transform: capitalize;
       padding-left: 10px;
       font-size: 0.9em;
       font-weight: 700;
